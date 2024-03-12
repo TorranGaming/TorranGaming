@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade UniAny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+    * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+
+    margin: 0;
+
+    background-color: #3b4351;
+}
+
+header {
+    padding: 0;
+    
+    margin: 0;
+    
+    text-align: center;
+    
+    color: #fff;
+    
+    background-color: #1e847f;
+    
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+   text-decoration: none;
+   
+   margin: 10%;
+   
+   color: #fff;  
+}
+
+#login {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background-color: #1e847f;
+
+    padding: 0;
+
+    border-radius: 10px;
+
+    width: 280px;
+}
+
+.card-header {
+    padding: 15px;
+
+    opacity: 0.8;
+
+    color: #fff;
+}
+
+.card-header::after {
+    content: "";
+
+    width: 70px;
+
+    height: 1px;
+    
+    background-color: #fff;
+    
+    display: block;
+
+}
+.card-conteudo label {
+    color: #fff;
+
+    font-size: 15px;
+
+    opacity: 0.8;
+
+}
+.card-conteudo-area {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 10px;
+}
+.card-conteudo-area input {
+    margin-top: 10px;
+
+    padding: 0;
+    
+    background-color: #fff;
+
+    outline: none;
+}
+
+.card-footer {
+    display: flex;
+    
+}
+
+.card-footer .submit {
+    width: 100%;
+
+    height: 35px;
+    
+    background-color: #fff;
+
+    margin: 10px;
+
+}
+
+.checkbox {
+    text-align: center;
+    
+    color: #fff;
+
+
+
+}
+
+
+</style>
+<body>
+    <header> <h1>UniAny</h1></header><hr>
+    
+    <div id="section">
+
+        <a href="secao1">Cadastro</a>
+
+        <a href="secao2">Alteração</a>
+
+        <a href="secao3">Inclusão</a>
+
+        <a href="secao4">Exclusão</a>
+
+    </div><hr>
+
+    <div id="login">
+         
+        <form class="card">
+
+            <div class="card-header">
+
+                <h2>Login</h2>
+            
+            </div>
+
+            <div class="card-conteudo">
+
+                <div class="card-conteudo-area">
+
+                    <label for="usuario">Usuário</label>
+
+                    <input type="email" id="usuario" name="usuario" autocomplete="off" required>
+                
+                </div>
+
+                <div class="card-conteudo-area">
+
+                    <label for="senha">Senha</label>
+
+                    <input type="password" id="senha" name="senha" autocomplete="off" required>
+                
+                </div>
+
+                <div class="card-footer">
+
+                    <input type="submit" value="Enviar" class="submit"><br>
+                
+                </div>
+            
+                <div class="checkbox">
+
+                    <input type="checkbox">
+
+                    <label for="checkbox">Esqueci a senha</label>
+
+                </div>
+                
+            </div>
+
+        
+        </form>
+
+    </body>
+</html>
